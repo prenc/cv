@@ -6,15 +6,15 @@
 \definecolor{accent}{HTML}{176078}
 \definecolor{muted}{HTML}{535D65}
 \usepackage[unicode,colorlinks=true,urlcolor=accent]{hyperref}
-\hypersetup{pdftitle={Pawel Renc — Research CV},pdfauthor={Pawel Renc}}
+\hypersetup{pdftitle={Pawel Renc — Scientific CV},pdfauthor={Pawel Renc}}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{3pt}
-\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=3pt,parsep=0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=2pt,parsep=0pt}
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{2pt}\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\section}{0pt}{8pt}{5pt}
 \pagestyle{fancy}\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\footnotesize\color{muted}Pawel Renc \enspace / \enspace Research CV}
+\fancyfoot[L]{\footnotesize\color{muted}Pawel Renc \enspace / \enspace Scientific CV}
 \fancyfoot[R]{\footnotesize\color{muted}\thepage}
 \setlength{\footskip}{20pt}
 \newcommand{\role}[4]{\textbf{#1}\hfill{\small #2}\\{\color{muted}#3\hfill{\small #4}}\par}
@@ -28,9 +28,18 @@
 \enspace · \enspace \href{https://www.linkedin.com/in/pawel-renc}{LinkedIn}
 \enspace · \enspace \href{https://scholar.google.com/citations?user=Ip7ldAEAAAAJ}{Google Scholar}}
 \section{Research profile}
-Research fellow at Massachusetts General Hospital working on generative models of longitudinal electronic health records and the infrastructure for training and evaluating them. Co-developer of ETHOS and ARES, combining healthcare-AI research with industry experience at Snowflake and high-performance computing research at ETH Zürich.
-\section{Research \& industry experience}
-\role{Research Fellow}{May 2026–present}{Massachusetts General Hospital · Sitek Lab}{Boston, MA}
+Research fellow at Massachusetts General Hospital working on generative models of longitudinal electronic health records and the infrastructure for training and evaluating them. Co-developer of ETHOS, combining healthcare-AI research with industry experience at Snowflake and high-performance computing research at ETH Zürich.
+\section{Education}
+\textbf{Doctorate · Engineering and Technology}\hfill May 2026\\
+AGH University of Krakow · Discipline: Information and Communication Technology\\
+{\small Dissertation: \textit{Foundation model for electronic health records}.\\
+Supervisors: Jarosław Wąs and Arkadiusz Sitek. Degree conferred May 21, 2026.}\par
+\textbf{Master's degree · Computer Science}\hfill 2021\\
+AGH University of Science and Technology · System modelling and data analysis\par
+\textbf{Bachelor's degree · Computer Science}\hfill 2020\\
+AGH University of Science and Technology
+\section{Research appointments \& experience}
+\role{Research Fellow}{May 2026–present}{Massachusetts General Hospital · \href{https://ipol.mgh.harvard.edu/}{iPOL}}{Boston, MA}
 \begin{itemize}
 \item Develop EHR foundation models and end-to-end infrastructure for large-scale data processing, training and inference.
 \item Maintain the ETHOS research codebase, spanning tokenization, model training, evaluation and synthetic timeline generation.
@@ -47,7 +56,7 @@ Research fellow at Massachusetts General Hospital working on generative models o
 \role{Visiting PhD Researcher}{Mar 2023–Apr 2025}{Massachusetts General Hospital · Harvard Medical School}{Boston, MA}
 \begin{itemize}
 \item Co-developed ETHOS for generative patient-timeline modeling and zero-shot health prediction; contributed to timeline representation, tokenization, transformer training and inference.
-\item Led software and formal analysis for ARES, extending timeline simulation to adaptive risk estimation.
+\item Led software and formal analysis for adaptive risk estimation using ETHOS-generated patient timelines.
 \end{itemize}
 \role{Visiting PhD Researcher}{2022–2023}{ETH Zürich · Scalable Parallel Computing Laboratory}{Zürich, Switzerland}
 \begin{itemize}
@@ -57,12 +66,8 @@ Research fellow at Massachusetts General Hospital working on generative models o
 \begin{itemize}
 \item Developed machine-learning methods for disease-phenotype discovery through patient-data clustering, in collaboration with University of Glasgow clinicians.
 \end{itemize}
-\section{Technical expertise}
-\textbf{Modeling:} EHR foundation models, generative AI, transformers, graph neural networks.\\
-\textbf{ML systems:} PyTorch, Transformers, vLLM, Ray; distributed training and inference.\\
-\textbf{Engineering:} Python, C/C++, CUDA, Julia, Bash; Polars, SQL, Linux and GPU computing.
 \newpage
-{\large\bfseries Pawel Renc}\hfill{\small\color{muted}Selected research, education \& service}
+{\large\bfseries Pawel Renc}\hfill{\small\color{muted}Publications, software \& service}
 \section{Selected publications}
 \paper{Foundation model of electronic medical records for adaptive risk estimation}
 {First author · \textit{GigaScience}, 2025.}{10.1093/gigascience/giaf107}
@@ -75,24 +80,19 @@ Research fellow at Massachusetts General Hospital working on generative models o
 \paper{EBIC.JL — an efficient implementation of evolutionary biclustering algorithm in Julia}
 {Coauthor · \textit{GECCO Companion}, 2021.}{10.1145/3449726.3463197}
 \section{Research software}
-\textbf{\href{https://github.com/ipolharvard/ethos-ares}{ETHOS / ARES}} — EHR tokenization, transformer training and health-trajectory inference.
+\textbf{\href{https://github.com/ipolharvard/ethos-ares}{ETHOS}} — EHR tokenization, transformer training and health-trajectory inference.
 Research software supporting generative patient-timeline modeling.\\
 \textbf{\href{https://github.com/EpistasisLab/EBIC.jl}{EBIC.jl}} — GPU-enabled evolutionary biclustering in Julia; developed during master's research.
-\section{Education}
-\textbf{Doctorate · Engineering and Technology}\hfill May 2026\\
-AGH University of Krakow · Discipline: Information and Communication Technology\\
-{\small Dissertation: \textit{Foundation model for electronic health records}.\\
-Supervisors: Jarosław Wąs and Arkadiusz Sitek. Degree conferred May 21, 2026.}\par
-\textbf{Master's degree · Computer Science}\hfill 2021\\
-AGH University of Science and Technology · System modelling and data analysis\par
-\textbf{Bachelor's degree · Computer Science}\hfill 2020\\
-AGH University of Science and Technology
 \section{Selected service \& teaching}
 \textbf{Peer review:} IEEE Journal of Biomedical and Health Informatics (two rounds, 2025);
 IEEE Transactions on Medical Imaging (2023); BMJ Digital Health \& AI (2026).\\
-\textbf{Grand rounds:} Applications of Machine Learning in Healthcare, DHR Health, April 2024.\\
+\textbf{Grand rounds:} Applications of Machine Learning in Healthcare, DHR Health, April 29, 2024.\\
 \textbf{Research and Teaching Assistant, AGH}\hfill 2020–2021\\
 Taught Unix, Operations Research and Discrete Systems Modeling.
+\section{Technical expertise}
+\textbf{Modeling:} EHR foundation models, generative AI, transformers, graph neural networks.\\
+\textbf{ML systems:} PyTorch, Transformers, vLLM, Ray; distributed training and inference.\\
+\textbf{Engineering:} Python, C/C++, CUDA, Julia, Bash; Polars, SQL, Linux and GPU computing.
 \section{Earlier engineering experience}
 \textbf{QED Software · Data Scientist}\hfill 2020–2021\\
 Built ML methods for detecting erroneous table joins and distinguishing bots from human game players.\\
